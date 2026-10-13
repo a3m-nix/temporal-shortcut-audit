@@ -1,0 +1,31 @@
+{
+  "analysis_status": "POSTHOC_EXPLORATORY_MECHANISTIC_STRENGTHENING",
+  "datasets": [
+    "edge_iiotset",
+    "ciciot2023",
+    "ton_iot"
+  ],
+  "evidence_class": "POSTHOC_MECHANISTIC_STRENGTHENING",
+  "note": "This post-hoc analysis strengthens mechanism characterization and does not replace the frozen primary controlled-intervention evidence.",
+  "output_root": "<EXPERIMENT_ROOT>/temporal_audit_posthoc_strengthening_v1/01_temporal_support",
+  "overlap_primary": "histogram-based overlap coefficient for test_normal vs attack; 200-bin value used in compact summary",
+  "overlap_sensitivity_bins": [
+    100,
+    200,
+    500
+  ],
+  "partition_definition": {
+    "attack": "split == test and y == 1",
+    "calibration_normal": "split == calibration_normal",
+    "earlystop_normal": "split == earlystop_normal",
+    "fit_normal": "split == fit_normal",
+    "test_normal": "split == test and y == 0"
+  },
+  "primary_order_check": "Spearman rho(source_row_index, frame.time_epoch)",
+  "scaler_rule": "saved A_q_t MinMaxScaler fitted on fit_normal only",
+  "script_version": "1.0.0",
+  "source_root": "<EXPERIMENT_ROOT>/temporal_audit_temporal_upgrade_e2e_v1_2",
+  "support_definition_scaled": "[0,1]",
+  "timestamp_condition_replayed": "A_q_t",
+  "timestamp_feature": "frame.time_epoch"
+}

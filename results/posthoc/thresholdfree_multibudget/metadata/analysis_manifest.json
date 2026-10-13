@@ -1,0 +1,49 @@
+{
+  "analysis_only": true,
+  "block_A_controlled_thresholdfree": {
+    "difference_direction": "lambda0_minus_lambda1",
+    "metrics": [
+      "ROC-AUC",
+      "PR-AUC/Average Precision"
+    ],
+    "multiple_testing": "Holm across 12 dataset-model comparisons separately per metric family",
+    "primary_test": "Nadeau-Bengio corrected repeated-CV t-test",
+    "scores": "saved non_epoch_score at lambda=0 and lambda=1"
+  },
+  "block_B_audit_multibudget": {
+    "conditions": [
+      "A_q_t",
+      "B_q"
+    ],
+    "inference_status": "descriptive paired 3-seed sensitivity; not promoted to strong inferential claim",
+    "metrics": [
+      "FNR",
+      "FPR",
+      "ROC-AUC",
+      "PR-AUC"
+    ],
+    "p999_note": "P99.9 is retained only as extreme-tail sensitivity. Interpret according to the calibration upper-tail count table.",
+    "test_scores": "saved q_score on identical test rows",
+    "threshold_percentiles": [
+      95.0,
+      99.0,
+      99.9
+    ],
+    "threshold_source": "each condition's saved calibration_normal q_score distribution"
+  },
+  "block_C_translation": {
+    "condition": "A_q_t",
+    "purpose": "avoid interpreting near-zero FNR change as selectivity when the original attack FNR is already at a floor",
+    "reports": [
+      "original FNR/FPR",
+      "shifted FNR/FPR with original fixed threshold",
+      "shifted FNR/FPR with recalibrated shifted-calibration threshold"
+    ],
+    "scheme": "global_plus_one_fit_span",
+    "weights": "fixed"
+  },
+  "evidence_class": "POSTHOC_MECHANISTIC_STRENGTHENING",
+  "note": "These post-hoc robustness analyses strengthen interpretation and do not replace the frozen primary controlled-intervention endpoint.",
+  "script_version": "1.0.0",
+  "training_performed": false
+}

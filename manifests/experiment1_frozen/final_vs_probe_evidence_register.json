@@ -1,0 +1,30 @@
+{
+  "legacy_final_evidence": {
+    "root": "<EXPERIMENT_ROOT>/0-temporal-feature-audit-v4-allminmax-3seed10fold",
+    "status": "frozen primary confirmatory evidence",
+    "training_runs": 720,
+    "clipping_additional_fits": 240
+  },
+  "development_probes": {
+    "probe_v1": "controlled_temporal_intervention/probe_ciciot2023_snn_34F_seed00_fold01_v1",
+    "probe_v2": "controlled_temporal_intervention/probe_ciciot2023_snn_34F_seed00_fold01_v2",
+    "status": "development/probe evidence only"
+  },
+  "current_additional_experiment": {
+    "root": "<EXPERIMENT_ROOT>/0-temporal-feature-audit-v4-allminmax-3seed10fold/controlled_temporal_intervention/ae3_3datasets_30fold_v1",
+    "status": "additional post-hoc controlled intervention evidence",
+    "models": [
+      "Dense_AE",
+      "LSTM_AE",
+      "CNN_AE"
+    ],
+    "datasets": [
+      "edge_iiotset",
+      "ciciot2023",
+      "ton_iot"
+    ],
+    "paired_units_per_dataset_model": 30
+  },
+  "protocol_revision_v3": "<EXPERIMENT_ROOT>/0-temporal-feature-audit-v4-allminmax-3seed10fold/controlled_temporal_intervention/ae3_3datasets_30fold_v1/metadata/protocol_revision_v3.json",
+  "current_implementation_freeze_v3": "<EXPERIMENT_ROOT>/0-temporal-feature-audit-v4-allminmax-3seed10fold/controlled_temporal_intervention/ae3_3datasets_30fold_v1/metadata/current_implementation_freeze_v3.json"
+}

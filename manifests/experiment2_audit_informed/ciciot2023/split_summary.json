@@ -1,0 +1,24 @@
+{
+  "analysis_unit_claim": "fixed parent-row-order block; not capture/session/environment independence",
+  "analysis_unit_counts_by_role": {
+    "calibration_normal": 2,
+    "earlystop_normal": 2,
+    "fit_normal": 9,
+    "test": 227
+  },
+  "calibration_normal_n": 6999,
+  "capture_file_disjoint_normal_partitions": false,
+  "dataset": "ciciot2023",
+  "earlystop_normal_n": 6975,
+  "embargo_dropped_n": 567,
+  "fallback_block_rows": 100000,
+  "fit_normal_n": 32363,
+  "preferred_capture_partition_attempt": "raw_capture_mapping_incomplete",
+  "raw_capture_mapping_incomplete": true,
+  "session_independence_certified": false,
+  "split_mode": "FIXED_PARENT_ORDER_BLOCK_DISJOINT_NORMAL_PARTITIONS",
+  "test_attack_n": 30000,
+  "test_normal_n": 7096,
+  "total_materialized_rows": 84000,
+  "used_rows": 83433
+}

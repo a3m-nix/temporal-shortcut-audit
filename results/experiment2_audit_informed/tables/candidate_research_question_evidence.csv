@@ -1,0 +1,5 @@
+candidate_question,evidence,status
+E1 acquisition-time structure and timestamp representation,capture mapping; timestamp-only baseline; precision sensitivity,MEASURED_AWAITING_SUPERVISOR_INTERPRETATION
+E2 timestamp influence on common non-timestamp reconstruction,A vs B and C vs D q-only contrasts; q residual transitions,MEASURED_AWAITING_SUPERVISOR_INTERPRETATION
+E3 detection and FPR consequences under acquisition/time shift,held-out new split; timestamp translations; fixed and recalibrated threshold tracks,MEASURED_AWAITING_SUPERVISOR_INTERPRETATION
+E4 behavioral temporal context without absolute chronology,D vs B and C vs D; PCA baseline; FNR/FPR/security analyses,MEASURED_AWAITING_SUPERVISOR_INTERPRETATION

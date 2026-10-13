@@ -1,0 +1,14 @@
+{
+  "edge_iiotset": {
+    "path": "<EXPERIMENT_ROOT>/0-temporal-feature-audit-v2-3datasets/materialized_samples/edge_iiotset_audit_sample.parquet",
+    "sha256": "6eaf0c3f6999b61df2a69a0eb70761a0e7c697842b6566deecdbd941a3e13f28"
+  },
+  "ciciot2023": {
+    "path": "<EXPERIMENT_ROOT>/0-temporal-feature-audit-v2-3datasets/materialized_samples/ciciot2023_audit_sample.parquet",
+    "sha256": "bc35172fddb2155b1aefcdc6559c84e778320da02d21134f533cee842b7928e7"
+  },
+  "ton_iot": {
+    "path": "<EXPERIMENT_ROOT>/0-temporal-feature-audit-v2-3datasets/materialized_samples/ton_iot_audit_sample.parquet",
+    "sha256": "1fe718e7099ab2de9d8c29c5c5265555a79dd7e74aa40573f3a375c0c644e6d4"
+  }
+}

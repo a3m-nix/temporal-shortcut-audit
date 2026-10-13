@@ -1,0 +1,4 @@
+dataset,split_mode,analysis_unit_kind,capture_independence_claim_allowed,session_independence_claim_allowed,note
+edge_iiotset,FIXED_PARENT_ORDER_BLOCK_DISJOINT_NORMAL_PARTITIONS,FIXED_PARENT_ORDER_BLOCK,False,False,capture_id in downstream legacy-shaped artifacts is an internal alias of analysis_unit_id; use analysis_unit_kind for interpretation
+ciciot2023,FIXED_PARENT_ORDER_BLOCK_DISJOINT_NORMAL_PARTITIONS,FIXED_PARENT_ORDER_BLOCK,False,False,capture_id in downstream legacy-shaped artifacts is an internal alias of analysis_unit_id; use analysis_unit_kind for interpretation
+ton_iot,FIXED_PARENT_ORDER_BLOCK_DISJOINT_NORMAL_PARTITIONS,FIXED_PARENT_ORDER_BLOCK,False,False,capture_id in downstream legacy-shaped artifacts is an internal alias of analysis_unit_id; use analysis_unit_kind for interpretation

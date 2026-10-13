@@ -1,0 +1,25 @@
+{
+  "status": "FROZEN_PROTOCOL_AMENDMENT_BEFORE_REMAINING_RUNS",
+  "reason": "Legacy-exact numerical gate failed for LSTM despite exact current-environment repeatability.",
+  "characterization_experiment": "<EXPERIMENT_ROOT>/0-temporal-feature-audit-v4-allminmax-3seed10fold/controlled_temporal_intervention/repeatability_lstm_edge_seed00_fold01_v1",
+  "representative_characterization": {
+    "dataset": "edge_iiotset",
+    "model": "LSTM_AE",
+    "seed": 0,
+    "fold": 1,
+    "n_repeats": 3,
+    "pairwise_original_prediction_agreement": 1.0,
+    "pairwise_neutral_prediction_agreement": 1.0,
+    "pairwise_score_difference": 0.0,
+    "legacy_original_prediction_agreement": 0.993125,
+    "legacy_neutral_prediction_agreement": 0.98625,
+    "legacy_original_fnr_abs_difference": 0.01,
+    "legacy_neutral_fnr_abs_difference": 0.02375
+  },
+  "v2_qc_thresholds": {
+    "prediction_agreement_min": 0.98,
+    "fnr_abs_difference_max": 0.03,
+    "recall_abs_difference_max": 0.03
+  },
+  "scientific_boundary": "Legacy concordance is a QC diagnostic, not the inferential comparison. Primary controlled-intervention inference remains paired within each newly trained model across lambda values."
+}

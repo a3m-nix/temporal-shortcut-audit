@@ -1,0 +1,157 @@
+{
+  "protocol": {
+    "analysis_parameters": {
+      "alpha": 0.05,
+      "bootstrap_iterations": 20000
+    },
+    "baselines": [
+      "always-normal sanity baseline",
+      "timestamp distance to fit-normal interval",
+      "PCA reconstruction on each safe condition with q-only score"
+    ],
+    "behavior": {
+      "capture_id_is_model_feature": false,
+      "causal": true,
+      "chunk_state_prior_packets": 8,
+      "group": "analysis_unit + flow_id; analysis_unit is certified capture when complete, otherwise fixed parent-order block",
+      "no_time_since_capture_start": true,
+      "state_reset": "at every analysis unit and on within-flow packet_index non-increase or timestamp backstep",
+      "translation_invariant": true,
+      "window_interarrival_observations": 8
+    },
+    "capture_evidence_reuse_root": "<EXPERIMENT_ROOT>/temporal_audit_temporal_upgrade_e2e_v1",
+    "capture_mapping_parameters": {
+      "block_length_tolerance_frames": 4,
+      "capture_prefix_frames": 512,
+      "fallback_parent_order_block_rows": 100000,
+      "min_offset_dominance": 1.5,
+      "min_offset_share": 0.03,
+      "min_offset_support": 16,
+      "parent_scan_batch": 250000
+    },
+    "claim_boundary": [
+      "no deployment generalization",
+      "no universal timestamp claim",
+      "no session-independence claim from capture files alone",
+      "no causal internal-mechanism proof",
+      "materialized sample evaluation is not full-stream deployment evaluation"
+    ],
+    "datasets": [
+      "edge_iiotset",
+      "ciciot2023",
+      "ton_iot"
+    ],
+    "evidence_class": "NEW_PROSPECTIVE_AFTER_AUDIT_VALIDATION",
+    "implementation_sha256": "e4689ec308af2306740a3598b882f4db91aa45293c47a9cdf161b97c6481d16d",
+    "intervention": {
+      "direct_neutralization": "set only raw frame.time_epoch to fit-normal median; q/r/b remain fixed",
+      "enabled": true,
+      "schemes": {
+        "analysis_group_hash_signed_half_fit_span": {
+          "kind": "hash_signed",
+          "multiplier": 0.5
+        },
+        "global_plus_one_fit_span": {
+          "kind": "global",
+          "multiplier": 1.0
+        },
+        "neutralize_to_fit_median": {
+          "kind": "neutralize_fit_median"
+        }
+      },
+      "score": "q-only common-component score",
+      "track1": "fixed weights + fixed scaler + fixed original calibration threshold",
+      "track2": "fixed weights + fixed scaler + threshold recalibrated on shifted normal-calibration only",
+      "translation_controls": "global or analysis-group-hash-signed raw epoch offsets; preserve q/r/b"
+    },
+    "legacy_evidence_policy": {
+      "development_probes_08_09": "exploratory; excluded from new final evidence",
+      "legacy_720_pair_experiment": "historical primary/frozen provenance label; retained",
+      "new_pipeline": "separate prospective-after-audit evidence block",
+      "v3_controlled_intervention": "historical final experimental evidence; not overwritten"
+    },
+    "model_seeds": [
+      0,
+      1,
+      2
+    ],
+    "models": [
+      "SNN_AE",
+      "Dense_AE",
+      "LSTM_AE",
+      "CNN_AE"
+    ],
+    "non_executable_gates": {
+      "T02_literature_novelty": "requires primary-source literature review outside this script",
+      "T14_manuscript_rewrite": "requires explicit user confirmation after evidence review",
+      "T16_promotor_submission": "human decision/submission task"
+    },
+    "representation": {
+      "b": [
+        "b_prev_iat_log1p",
+        "b_mean_iat8_log1p",
+        "b_std_iat8_log1p",
+        "b_packet_rate8_log1p",
+        "b_byte_rate8_log1p",
+        "b_mean_len8_log1p",
+        "b_cv_iat8_log1p"
+      ],
+      "conditions": [
+        "L34_q_r_t",
+        "L33_q_r",
+        "A_q_t",
+        "B_q",
+        "C_q_b_t",
+        "D_q_b"
+      ],
+      "precision_sensitivity": "A_q_t_epoch_float32_precast_sensitivity",
+      "primary_score": "mean squared reconstruction error over common q components only",
+      "q": "legacy FINAL_33 excluding inter_arrival_time; no frame.time_epoch",
+      "r": "legacy inter_arrival_time (global-table predecessor delta per audits; bridge only)",
+      "secondary_score": "mean squared reconstruction error over all condition input/output components",
+      "t": "frame.time_epoch scaled in float64 before float32 model input"
+    },
+    "script_version": "1.2.0",
+    "split": {
+      "embargo_rows": 5000,
+      "fallback": "fixed parent-order blocks classified from parent labels; only pure-normal blocks may enter fit/early-stop/calibration; attack/mixed blocks are test; explicitly not capture- or session-disjoint",
+      "fallback_parent_order_block_rows": 100000,
+      "normal_fractions_if_blocked": {
+        "calibration_normal": 0.1,
+        "earlystop_normal": 0.15,
+        "fit_normal": 0.6,
+        "test_normal": 0.15
+      },
+      "old_sample_exposure": "all materialized sample rows were previously available in historical experiments; new test means held out from this new fit/tuning/calibration only",
+      "partitions": [
+        "fit_normal",
+        "earlystop_normal",
+        "calibration_normal",
+        "test"
+      ],
+      "preferred": "capture-file-disjoint pure-normal development partitions plus attack/mixed captures held out"
+    },
+    "statistics": {
+      "effect_ci": "paired analysis-unit bootstrap mean difference",
+      "fpr": "measured held-out FPR; no assumption that P99 guarantees 1%",
+      "model_seed_handling": "average analysis-unit FNR across model seeds before acquisition-group inference",
+      "multiplicity": "Holm separately within each planned contrast family across dataset-model comparisons",
+      "primary_group": "analysis unit: certified raw capture only when complete mapping exists; otherwise fixed parent-order block",
+      "primary_p_value": "paired analysis-unit sign-flip randomization test",
+      "secondary_test": "Wilcoxon signed-rank only when >=5 acquisition groups"
+    },
+    "training": {
+      "batch_size": 256,
+      "early_stopping_data": "earlystop_normal only",
+      "learning_rate": 0.0005,
+      "max_epochs": 30,
+      "normal_only": true,
+      "operating_percentile": 99.0,
+      "patience": 5,
+      "scaler": "MinMaxScaler",
+      "scaler_fit": "fit_normal only",
+      "threshold_data": "calibration_normal only"
+    }
+  },
+  "protocol_hash": "6921766ff0f11d825b5f0dc36fc915ad6873a627daa312b53fe11bb2ca41e45c"
+}

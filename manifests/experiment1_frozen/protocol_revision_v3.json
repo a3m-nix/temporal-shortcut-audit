@@ -1,0 +1,29 @@
+{
+  "status": "FROZEN_PROTOCOL_AMENDMENT_BEFORE_REMAINING_RUNS",
+  "revision": "v3_structural_gate_legacy_concordance_descriptive_only",
+  "why_revision_was_needed": "The v2 legacy-concordance gate stopped at Edge-IIoTset/LSTM-AE seed=0 fold=3. That fold reused the frozen data/split/scaler/seed protocol but differed materially from the historical legacy predictions (prediction agreement about 0.89-0.91; FNR difference about 17.8-19.9 pp).",
+  "repeatability_characterization": {
+    "path": "<EXPERIMENT_ROOT>/0-temporal-feature-audit-v4-allminmax-3seed10fold/controlled_temporal_intervention/repeatability_lstm_edge_seed00_fold01_v1",
+    "result": "Three current-environment repeats of Edge-IIoTset/LSTM-AE seed=0 fold=1 were bitwise identical to one another (prediction agreement=1.0 and score differences=0), while differing slightly from legacy."
+  },
+  "historical_identity_limit": "The original confirmatory manifest contains the base-model script path but no historical SHA-256 hashes; current hashes are frozen from this point forward, but historical implementation drift cannot be proven or excluded.",
+  "scientific_rationale": "The controlled-intervention estimand is within-model: lambda values are compared using the same newly trained weights, validation-derived threshold, test samples, and fixed non-epoch inputs. Legacy numerical reproduction is therefore a reproducibility audit, not a validity condition for the intervention contrast.",
+  "what_did_not_change": [
+    "datasets and frozen corpus",
+    "train/validation/test split files",
+    "scalers",
+    "feature set/order",
+    "model architectures and hyperparameters",
+    "model seed rule",
+    "lambda grid",
+    "P99 validation-normal threshold protocol",
+    "primary endpoint",
+    "statistical tests and multiplicity correction"
+  ],
+  "new_hard_gate": [
+    "source_row_index order must exactly match legacy test evidence",
+    "y_true must exactly match legacy test evidence",
+    "the experiment must directly reuse the frozen split and scaler files"
+  ],
+  "legacy_concordance_policy": "always save and report; never fail a run solely for numerical disagreement"
+}

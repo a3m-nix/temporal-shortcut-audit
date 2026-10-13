@@ -1,0 +1,30 @@
+{
+  "analysis_only": true,
+  "controlled_intervention_runs_expected": 360,
+  "controlled_intervention_runs_found": 360,
+  "evidence_class": "POSTHOC_MECHANISTIC_STRENGTHENING",
+  "lambda_curve_role": "descriptive mechanistic intervention-response curve; primary statistical inference remains lambda=0 vs lambda=1 Nadeau-Bengio corrected repeated-CV test with Holm-12",
+  "lambda_grid": [
+    0.0,
+    0.001,
+    0.0025,
+    0.005,
+    0.01,
+    0.025,
+    0.05,
+    0.1,
+    0.25,
+    0.5,
+    1.0
+  ],
+  "note": "This post-hoc analysis strengthens mechanism characterization and does not replace the frozen primary controlled-intervention evidence.",
+  "primary_endpoint_for_curve": "non_epoch_fnr",
+  "quantile_bins": 10,
+  "score_source": "saved lambda=1 non_epoch_score from sample_level_intervention.csv.gz",
+  "script_version": "1.0.0",
+  "support_distance_source": "saved sample_temporal_risk.csv.gz from each controlled-intervention run",
+  "support_score_plot": "run-balanced attack quantile bins; y normalized by each run's P99 non-epoch calibration threshold for cross-run comparability",
+  "support_score_primary_scope": "attack packets",
+  "support_score_primary_statistic": "within-run Spearman rho between scaled extrapolation distance and common non-epoch reconstruction score s_q",
+  "training_performed": false
+}

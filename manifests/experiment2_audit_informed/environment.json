@@ -1,0 +1,24 @@
+{
+  "capinfos_exists": true,
+  "created_utc": "2026-09-14T10:19:15.336403+00:00",
+  "cwd": "<EXPERIMENT_ROOT>/0-temporal-feature-audit-v4-allminmax-3seed10fold",
+  "executable": "<PYTHON_ENV>/bin/python",
+  "legacy_hash_mismatches": [],
+  "legacy_hash_mismatches_allowed": false,
+  "legacy_hashes": {
+    "03-model-epoch-audit.py": "3167de990347ebd18b3b266b4b65a5c2a0aecb9ab20cc7adccdda0b31db64d33",
+    "04-confirmatory-allminmax-3seed-10fold.py": "1dc4d9951fbf8a0e0732a6b26c041ba84cf4ad9d43b50cddf5562cd83af89e06"
+  },
+  "numpy": "1.26.4",
+  "pandas": "2.2.3",
+  "platform": "Linux-6.8.12-9-pve-x86_64-with-glibc2.35",
+  "prior_flow_audit": "<EXPERIMENT_ROOT>/temporal_audit_flow_boundary_audits_v2/run_20260914T072136_852977Z_2502716",
+  "prior_provenance": "<EXPERIMENT_ROOT>/temporal_audit_provenance_audits/run_20260914T030214_361474Z_5e0109",
+  "pyarrow": "18.0.0",
+  "python": "3.10.12 (main, Mar  3 2026, 11:56:32) [GCC 11.4.0]",
+  "scipy": "1.15.1",
+  "sklearn": "1.5.2",
+  "tensorflow": "2.12.0",
+  "tshark_exists": true,
+  "user": "jupyteruser"
+}

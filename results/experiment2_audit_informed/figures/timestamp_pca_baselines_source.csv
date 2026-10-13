@@ -1,0 +1,16 @@
+panel,dataset,series,value_percent
+timestamp_only,edge_iiotset,ROC-AUC,100.0
+timestamp_only,edge_iiotset,Recall,0.0
+timestamp_only,edge_iiotset,FPR,0.0
+timestamp_only,ciciot2023,ROC-AUC,100.0
+timestamp_only,ciciot2023,Recall,100.0
+timestamp_only,ciciot2023,FPR,100.0
+timestamp_only,ton_iot,ROC-AUC,100.0
+timestamp_only,ton_iot,Recall,100.0
+timestamp_only,ton_iot,FPR,100.0
+pca_reconstruction,edge_iiotset,A_q_t,0.075
+pca_reconstruction,edge_iiotset,B_q,0.075
+pca_reconstruction,ciciot2023,A_q_t,0.0
+pca_reconstruction,ciciot2023,B_q,53.25666666666666
+pca_reconstruction,ton_iot,A_q_t,0.0
+pca_reconstruction,ton_iot,B_q,34.96

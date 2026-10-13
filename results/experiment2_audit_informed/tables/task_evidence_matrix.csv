@@ -1,0 +1,14 @@
+task,status,evidence,boundary
+T03_capture_provenance,EXECUTED,capture_mapping/capture_mapping_status.csv + splits/analysis_unit_semantics.csv,"raw-capture mapping retained when certified; incomplete coverage triggers fixed parent-order blocks, never an invented session/capture claim"
+T04_precision_feature_contract,EXECUTED,metadata/feature_contract.json; tables/q_scaler_consistency.csv; precision-sensitivity condition,precision impact quantified under new protocol; historical v3 retained
+T05_acquisition_split,EXECUTED,splits/split_summary.csv; splits/*/split_manifest.csv.gz,capture-disjoint only where whole capture files support all normal roles; otherwise explicitly blocked
+T07_behavior_context,EXECUTED,behavior/*_causal_behavior.parquet; behavior/translation_invariance_unit_test.json,past-only flow-local features; no time-since-capture-start
+T09_technical_pilot,EXECUTED,pilot_technical_only/pilot_results.csv,development-normal technical QA; not scientific outcome
+T10_main_conditions_baselines,EXECUTED,tables/neural_run_metrics.csv; tables/baseline_metrics.csv,materialized samples; four packet-reconstruction architectures
+T11_timestamp_shift,EXECUTED,tables/intervention_run_metrics.csv,synthetic timestamp translation; not deployment validation
+T12_security_residual,EXECUTED,tables/security_* including shared cross-model transitions; tables/residual_*,"packet/analysis-unit diagnostics; residual changes are descriptive reconstruction-error decomposition, not causal feature importance"
+T13_statistics_claims,EXECUTED,tables/analysis_unit_contrast_statistics.csv; tables/intervention_analysis_unit_statistics.csv,"analysis-unit inference; raw capture files are used only when completely certified, otherwise fixed parent-order blocks are explicitly non-session/non-capture units"
+T15_reproducibility_package,PENDING_PACKAGE_STAGE,review_package + artifact inventory created next,heavy run artifacts remain in full output root
+T02_literature_novelty,NON_EXECUTABLE_REMAINS,human/chat primary-source literature review,script cannot establish novelty
+T14_manuscript_rewrite_RQ_closure,NON_EXECUTABLE_REMAINS,requires supervisor interpretation and explicit user confirmation,no article sections drafted automatically
+T16_submission_promotor,NON_EXECUTABLE_REMAINS,human decision,not automatable by experiment script

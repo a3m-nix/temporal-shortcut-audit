@@ -1,0 +1,4 @@
+dataset,fit_t_scaled_min,fit_t_scaled_max,test_normal_outside_support_pct,attack_outside_support_pct,attack_above_support_pct,attack_below_support_pct,attack_support_distance_median,attack_support_distance_q95,spearman_rho_source_row_vs_epoch_all_used,spearman_p_raw_all_used,monotonic_violation_rate_all_used,test_normal_vs_attack_overlap_coefficient_200bins
+edge_iiotset,0.0,1.0,0.0,100.0,0.0,100.0,1.5293222567333942,1.540353513319212,-0.5682876828308726,0.0,0.0004021986861509586,0.0
+ciciot2023,0.0,1.0,100.0,100.0,61.56666666666667,38.43333333333333,192.8561554740445,742.378968569843,0.4886385901020315,0.0,7.191485281426791e-05,0.0
+ton_iot,0.0,1.0,100.0,100.0,100.0,0.0,53.41054712664118,54.27258663715111,0.971344592441705,0.0,3.5753870356466085e-05,0.0

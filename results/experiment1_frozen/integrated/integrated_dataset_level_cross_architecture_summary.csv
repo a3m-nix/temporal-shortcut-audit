@@ -1,0 +1,4 @@
+dataset,n_models,mean_delta_fnr_pp_across_models,min_delta_fnr_pp,max_delta_fnr_pp,n_significant_holm12,all_models_significant_holm12,all_corrected_ci_exclude_zero
+edge_iiotset,4,0.4927083333333301,-0.89583333333333,2.92916666666666,0,False,False
+ciciot2023,4,30.645555555555553,29.27444444444444,31.95333333333333,4,True,True
+ton_iot,4,36.43833333333333,34.400000000000006,41.773333333333326,4,True,True

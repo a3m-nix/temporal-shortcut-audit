@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the associated article and this software release."
+title: "Temporal Shortcut Audit for Reconstruction-Based IoT Intrusion Detection"
+type: software
+version: 1.0.0
+date-released: 2026-10-13
+authors:
+  - family-names: Rahim
+    given-names: Abdul
+  - family-names: Stiawan
+    given-names: Deris
+  - family-names: Satria
+    given-names: Hadipurnawan
+  - family-names: Kurniabudi
+    given-names: Kurniabudi
+  - family-names: Alzahrani
+    given-names: Rami J.
+  - family-names: Mohammedali
+    given-names: Elkhatim Abuelyasar Elmobarak
+  - family-names: Budiarto
+    given-names: Rahmat
+keywords:
+  - IoT intrusion detection
+  - temporal shortcut
+  - absolute capture time
+  - reconstruction anomaly detection
+  - benchmark validity
+  - acquisition chronology

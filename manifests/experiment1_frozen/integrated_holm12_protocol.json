@@ -1,0 +1,42 @@
+{
+  "status": "FROZEN_INTEGRATED_STATISTICAL_AUDIT",
+  "analysis_only": true,
+  "training_performed": false,
+  "primary_endpoint": "non_epoch_fnr_lambda0_minus_lambda1",
+  "models": [
+    "SNN_AE",
+    "Dense_AE",
+    "LSTM_AE",
+    "CNN_AE"
+  ],
+  "datasets": [
+    "edge_iiotset",
+    "ciciot2023",
+    "ton_iot"
+  ],
+  "comparisons": 12,
+  "paired_units_per_comparison": 30,
+  "primary_test": "Nadeau-Bengio corrected repeated-CV t-test",
+  "multiple_testing": "Holm adjustment across all 12 dataset-model comparisons",
+  "alpha": 0.05,
+  "secondary_test": "Wilcoxon signed-rank retained as robustness evidence only",
+  "effect_direction": "positive mean_difference means non-epoch FNR is higher at lambda=0 than at lambda=1",
+  "source_files": {
+    "snn_endpoint_statistics": {
+      "path": "<EXPERIMENT_ROOT>/0-temporal-feature-audit-v4-allminmax-3seed10fold/controlled_temporal_intervention/snn_3datasets_30fold_v1/tables/endpoint_non_epoch_statistics.csv",
+      "sha256": "e3b4f8468c918f4bc4061d4df1beeb5219bfcd224ebde51c32ed1cb89dc69dd3"
+    },
+    "ae3_endpoint_statistics": {
+      "path": "<EXPERIMENT_ROOT>/0-temporal-feature-audit-v4-allminmax-3seed10fold/controlled_temporal_intervention/ae3_3datasets_30fold_v1/tables/endpoint_non_epoch_statistics.csv",
+      "sha256": "4c8a665a9868fa681a4687f442101f1ed3711362479e486e71ead90484b0f173"
+    },
+    "snn_lambda_summary": {
+      "path": "<EXPERIMENT_ROOT>/0-temporal-feature-audit-v4-allminmax-3seed10fold/controlled_temporal_intervention/snn_3datasets_30fold_v1/tables/dataset_lambda_summary.csv",
+      "sha256": "812e56755b76cda6713e92407835f49f9f5f9e87e2854c805e7e15e89175ba16"
+    },
+    "ae3_lambda_summary": {
+      "path": "<EXPERIMENT_ROOT>/0-temporal-feature-audit-v4-allminmax-3seed10fold/controlled_temporal_intervention/ae3_3datasets_30fold_v1/tables/dataset_lambda_summary.csv",
+      "sha256": "da7c69dd4a0a7f047d95ab7176d1cb00cca7c1bbb46e0cee11f108c37f7b0a3b"
+    }
+  }
+}

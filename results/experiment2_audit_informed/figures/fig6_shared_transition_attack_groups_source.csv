@@ -1,0 +1,9 @@
+panel,label,attack_n,detected_all_to_missed_all_n,detected_to_missed_pct
+shared_cross_model_transition,edge_iiotset,48000,0,0.0
+shared_cross_model_transition,ciciot2023,180000,31644,17.580000000000002
+shared_cross_model_transition,ton_iot,60000,19208,32.013333333333335
+ciciot2023_most_affected_groups,UDP_Flood,6000,3325,55.41666666666667
+ciciot2023_most_affected_groups,HTTP_Flood,6000,2457,40.949999999999996
+ciciot2023_most_affected_groups,Mirai_udpplain,6000,2291,38.18333333333334
+ciciot2023_most_affected_groups,ICMP_Flood,6000,2003,33.38333333333333
+ciciot2023_most_affected_groups,SlowLoris,6000,1387,23.116666666666667

@@ -1,0 +1,24 @@
+{
+  "analysis_unit_claim": "fixed parent-row-order block; not capture/session/environment independence",
+  "analysis_unit_counts_by_role": {
+    "calibration_normal": 9,
+    "earlystop_normal": 14,
+    "fit_normal": 54,
+    "test": 112
+  },
+  "calibration_normal_n": 1842,
+  "capture_file_disjoint_normal_partitions": false,
+  "dataset": "ton_iot",
+  "earlystop_normal_n": 2770,
+  "embargo_dropped_n": 30,
+  "fallback_block_rows": 100000,
+  "fit_normal_n": 10727,
+  "preferred_capture_partition_attempt": "raw_capture_mapping_incomplete",
+  "raw_capture_mapping_incomplete": true,
+  "session_independence_certified": false,
+  "split_mode": "FIXED_PARENT_ORDER_BLOCK_DISJOINT_NORMAL_PARTITIONS",
+  "test_attack_n": 10000,
+  "test_normal_n": 2631,
+  "total_materialized_rows": 28000,
+  "used_rows": 27970
+}

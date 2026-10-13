@@ -1,0 +1,37 @@
+Public artifact sanitization
+============================
+
+Scope:
+manifests/, results/, reproducibility/
+
+Scientific values changed:
+NONE.
+
+Transformations:
+- original server root replaced by <EXPERIMENT_ROOT>;
+- venue-specific working labels replaced by venue-neutral labels;
+- prior submission name removed where present.
+
+The original frozen artifacts remain unchanged in the private experimental archive.
+
+Modified files:
+- manifests/experiment1_frozen/protocol_revision_v3.json
+- manifests/experiment1_frozen/dataset_source_hashes.json
+- manifests/experiment1_frozen/integrated_holm12_protocol.json
+- manifests/experiment1_frozen/environment.json
+- manifests/experiment1_frozen/current_implementation_freeze_v3.json
+- manifests/experiment1_frozen/reproduction_gate_revision.json
+- manifests/experiment1_frozen/final_vs_probe_evidence_register.json
+- manifests/experiment1_frozen/protocol_freeze.json
+- manifests/experiment1_frozen/protocol_freeze_v3.json
+- manifests/experiment2_audit_informed/environment.json
+- manifests/experiment2_audit_informed/input_inventory.csv
+- manifests/experiment2_audit_informed/protocol_freeze.json
+- manifests/experiment2_audit_informed/resolved_inputs.json
+- results/experiment2_audit_informed/capture_mapping/capture_blocks_all.csv
+- results/experiment2_audit_informed/capture_mapping/capture_mapping_status.csv
+- results/posthoc/temporal_support/metadata/analysis_manifest.json
+- results/posthoc/thresholdfree_multibudget/tables/controlled_run_inventory.csv
+- results/posthoc/dose_response/metadata/lambda_summary_concordance.json
+- results/posthoc/dose_response/tables/completed_run_inventory.csv
+- results/posthoc/dose_response/tables/fold_lambda_metrics_4models.csv

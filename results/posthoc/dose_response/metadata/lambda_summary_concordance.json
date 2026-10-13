@@ -1,0 +1,6 @@
+{
+  "integrated_lambda_table_path": "<EXPERIMENT_ROOT>/0-temporal-feature-audit-v4-allminmax-3seed10fold/controlled_temporal_intervention/integrated_4models_holm12_v1/tables/integrated_dataset_lambda_summary_4models.csv",
+  "integrated_lambda_table_present": true,
+  "integrated_lambda_table_sha256": "185f7f3895cf131912cbbc8f58ab04960ed7ec2f5c3e1243c773f06acc41b05f",
+  "max_abs_non_epoch_fnr_mean_difference": 9.020562075079397e-17
+}

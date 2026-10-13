@@ -1,0 +1,8 @@
+{
+  "frozen_at_utc": "2026-09-13T03:35:10.050990+00:00",
+  "driver_script": "<EXPERIMENT_ROOT>/0-temporal-feature-audit-v4-allminmax-3seed10fold/04-confirmatory-allminmax-3seed-10fold.py",
+  "driver_script_sha256": "1dc4d9951fbf8a0e0732a6b26c041ba84cf4ad9d43b50cddf5562cd83af89e06",
+  "base_model_script": "<EXPERIMENT_ROOT>/0-temporal-feature-audit/03-model-epoch-audit.py",
+  "base_model_script_sha256": "3167de990347ebd18b3b266b4b65a5c2a0aecb9ab20cc7adccdda0b31db64d33",
+  "note": "These hashes freeze the current implementation for the additional intervention experiment only."
+}

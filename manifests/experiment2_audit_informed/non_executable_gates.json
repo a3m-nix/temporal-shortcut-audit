@@ -1,0 +1,5 @@
+{
+  "T02_literature_novelty": "requires primary-source literature review outside this script",
+  "T14_manuscript_rewrite": "requires explicit user confirmation after evidence review",
+  "T16_promotor_submission": "human decision/submission task"
+}

@@ -1,0 +1,52 @@
+Public release transformation
+=============================
+
+Purpose
+-------
+Create venue-neutral, portable public source copies while preserving the
+private frozen experimental archive unchanged.
+
+Scientific/computational changes
+--------------------------------
+NONE intended.
+
+Public-release transformations
+------------------------------
+- venue-specific working labels removed;
+- prior-submission wording removed;
+- private absolute experiment paths replaced by TEMPORAL_AUDIT_ROOT;
+- private external dataset paths replaced by TEMPORAL_DATA_ROOT;
+- public dependency hashes recalculated after path-only/source-label changes.
+
+Required environment variables
+------------------------------
+TEMPORAL_AUDIT_ROOT=/path/to/0-eksperimen-final
+TEMPORAL_DATA_ROOT=/path/to/dataset
+
+Public source hashes
+--------------------
+03-model-epoch-audit.py
+cac1a5cca1a91190967248e592a113a88b3fa71bc8dc5851d841e900005a25a2
+
+04-confirmatory-allminmax-3seed-10fold.py
+71aa55026845bbe40d112c7dc0b36b3a4bc00d8f76860389245c25080d6fb21f
+
+20-end-to-end-audit-informed-v1.2.py
+18ec1e3ba134c5aa0db31017b00ae4eb2c0758d055dbd2c47cb7721aee07ad0b
+
+Private frozen source files remain unchanged in the original archive.
+
+Protocol-freeze artifact hashes
+-------------------------------
+Original frozen protocol_freeze.json SHA-256:
+f184963f32bb6a771511ca304a1df665135dd6ab7824c258321e81b1822b485d
+
+Public sanitized protocol_freeze.json SHA-256:
+f575a865b1e798b0412dfc0d1948cb2aa483dd86521ec6a148c3375a7cd31afe
+
+The difference is caused only by public-release sanitization of local paths
+and venue-specific labels. Scientific protocol fields and experimental
+results were not changed.
+
+The internal source_protocol_hash remains:
+6921766ff0f11d825b5f0dc36fc915ad6873a627daa312b53fe11bb2ca41e45c

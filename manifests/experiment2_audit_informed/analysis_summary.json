@@ -1,0 +1,15 @@
+{
+  "attack_group_rows": 31500,
+  "common_missed_rows": 63,
+  "completed_utc": "2026-09-14T11:11:18.483976+00:00",
+  "drafting_boundary": "These tables are evidence, not manuscript prose. Supervisor review is required before RQ/title/contribution rewrite.",
+  "ensemble_rows": 63,
+  "intervention_statistics_rows": 216,
+  "neural_summary_rows": 84,
+  "packet_transition_rows": 216,
+  "planned_contrast_analysis_unit_seed_rows": 26784,
+  "planned_contrast_statistics_rows": 72,
+  "residual_decomposition_rows": 5024,
+  "shared_cross_model_transition_rows": 414,
+  "statistical_boundary": "analysis units follow each dataset split mode: certified capture files only when complete mapping exists, otherwise fixed parent-order blocks; session independence is never asserted"
+}

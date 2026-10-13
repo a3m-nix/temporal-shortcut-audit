@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+*.log
+
+# Large/private experimental artifacts
+*.keras
+*.h5
+*.parquet
+*.zip
+
+# Raw datasets are not distributed
+data/raw/

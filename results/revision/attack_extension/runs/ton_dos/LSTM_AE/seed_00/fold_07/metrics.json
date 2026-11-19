@@ -1,0 +1,18 @@
+{
+  "dataset": "ton_dos",
+  "model": "LSTM_AE",
+  "seed": 0,
+  "fold": 7,
+  "model_seed": 1111003,
+  "epochs_used": 30,
+  "threshold": 0.03034459482878445,
+  "neutral": 0.48046875,
+  "train_sec": 9.4285569190979,
+  "n_train": 7200,
+  "n_val": 1800,
+  "n_test": 2000,
+  "attack_oos_frac": 1.0,
+  "attack_dist_median": 27.6484375,
+  "normal_oos_frac": 0.0,
+  "predictions_sha256": "4b8e417c3e8b44092cfae56dd644f06211f891ff76ab2006947facd7579cbf7e"
+}

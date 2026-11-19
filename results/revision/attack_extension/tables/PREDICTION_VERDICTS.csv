@@ -1,0 +1,5 @@
+prediction,met,detail
+X1,False,"ToN DoS: models with dFNR>20pp, CI>0, Holm<0.05: 0/4; dFNR=[4.65, 4.3, 18.42, 4.52]"
+X2,True,"ToN DoS: |clip-l0|<5pp: 4/4; diffs=[-0.27, -0.33, -3.45, -0.41]"
+X3,True,"Edge non-flood: CI incl 0 or |dFNR|<5pp: 4/4; dFNR=[-0.11, 0.77, -1.01, 1.84]"
+X4,True,"Edge non-flood: |clip-l1|<1pp: 4/4; diffs=[0.0, 0.0, 0.0, 0.0]"

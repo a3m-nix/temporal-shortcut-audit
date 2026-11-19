@@ -1,0 +1,18 @@
+{
+  "dataset": "ton_dos",
+  "model": "CNN_AE",
+  "seed": 0,
+  "fold": 8,
+  "model_seed": 1111204,
+  "epochs_used": 30,
+  "threshold": 0.01008407748304307,
+  "neutral": 0.482421875,
+  "train_sec": 10.315585374832153,
+  "n_train": 7200,
+  "n_val": 1800,
+  "n_test": 2000,
+  "attack_oos_frac": 1.0,
+  "attack_dist_median": 27.6484375,
+  "normal_oos_frac": 0.0,
+  "predictions_sha256": "4b8e417c3e8b44092cfae56dd644f06211f891ff76ab2006947facd7579cbf7e"
+}

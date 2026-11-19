@@ -1,0 +1,38 @@
+{
+  "ton_dos": {
+    "normal": 14400,
+    "attack": 10000,
+    "dos_parent_rows": 7088124,
+    "bin_edges": [
+      1556129621.885101,
+      1556130639.501916,
+      1556131416.7026942,
+      1556132172.08109,
+      1556133564.1776307,
+      1556134498.877276,
+      1556144879.2446113,
+      1556145670.1346064,
+      1556153786.6658685,
+      1556154583.6148272,
+      1556155375.680307
+    ],
+    "sha256": "76e6bde559e4c35d264e4f27016aad9f0342b3e83a51a296cb2fbb871bdbf48d"
+  },
+  "edge_nonflood": {
+    "normal": 14400,
+    "attack": 10000,
+    "families": [
+      "backdoor",
+      "mitm",
+      "os_fingerprinting",
+      "password",
+      "port_scanning",
+      "ransomware",
+      "sql_injection",
+      "uploading",
+      "vulnerability_scanner",
+      "xss"
+    ],
+    "sha256": "66176da3e446067f5e1d064a8f3f36df4c54dc77cb548cf3ff59773453234835"
+  }
+}

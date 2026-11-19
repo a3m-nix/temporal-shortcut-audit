@@ -1,0 +1,18 @@
+{
+  "dataset": "edge_nonflood",
+  "model": "LSTM_AE",
+  "seed": 0,
+  "fold": 6,
+  "model_seed": 1210903,
+  "epochs_used": 30,
+  "threshold": 0.07501633152365685,
+  "neutral": 0.99053955078125,
+  "train_sec": 10.20369029045105,
+  "n_train": 7200,
+  "n_val": 1800,
+  "n_test": 2000,
+  "attack_oos_frac": 0.0,
+  "attack_dist_median": 0.0,
+  "normal_oos_frac": 0.0,
+  "predictions_sha256": "4b8e417c3e8b44092cfae56dd644f06211f891ff76ab2006947facd7579cbf7e"
+}

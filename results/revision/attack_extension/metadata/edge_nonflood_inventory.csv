@@ -1,0 +1,12 @@
+family,rows,tshark_rc,pcap_sha256,epoch_min,epoch_max,stderr_tail
+backdoor,24914,0,2f22c751442017f745397d517df9837da378362f670ad238faeac0decd58e3e9,1638723503.150209,1638734821.118175,"Running as user ""root"" and group ""root"". This could be dangerous."
+mitm,1229,0,ef952aff57dd30f04a98511cae2f34f642a64720fcde31df8b2f6dcf0351d536,1638035454.178322,1638036647.816351,"Running as user ""root"" and group ""root"". This could be dangerous."
+os_fingerprinting,1176,0,68c0464ac92f1d08a050f4e013dd5e0d0e870f39b8f70f26acde133b6d7e00c4,1640639670.939803,1640640496.484355,"Running as user ""root"" and group ""root"". This could be dangerous."
+password,1053893,0,5e2393acebb92806205eb87bff5dd82cdece3cd183e760b1cf737ed1c8a663c2,1638578735.961572,1638647241.60508,"Running as user ""root"" and group ""root"". This could be dangerous."
+port_scanning,23329,0,9fa4c8527951c2ea935b1ae5e932063c1b7fb8cc1e2b0f24defbe3a7b99058d9,1637766209.475073,1637776209.194016,"Running as user ""root"" and group ""root"". This could be dangerous."
+ransomware,11030,0,f38a731096f61391384adad975537de2de6cea89f38e1c1421e5b328f4b17116,1638457327.998055,1638573878.441645,"Running as user ""root"" and group ""root"". This could be dangerous."
+sql_injection,51228,0,374b06418c3dddd831561a8b5521c18a47bd1cd9bfa83f83e33b70d134517491,1638218118.238171,1638218623.68852,"Running as user ""root"" and group ""root"". This could be dangerous."
+uploading,37644,0,29a16de3410e3c2ff5c3dad8a54d0092dd98c63ea3c13994f4416414bd74d490,1638828512.88677,1638829018.204631,"Running as user ""root"" and group ""root"". This could be dangerous."
+vulnerability_scanner,265827,2,af8cb9e7707000bab20618f5f6c4efe09b637b21e7d0e3cb2a055a6d75524083,1638814928.593687,1638817323.254705,"up/0-eksperimen-final/dataset-csv/edge_iiotset/attack_traffic/vulnerability_scanner_attack.pcap"" appears to be damaged or corrupt.
+(pcap: File has 136146411-byte packet, bigger than maximum of 262144)"
+xss,16215,0,9e155d46254db96acdf0f97245da6734a7de2c82a0c3e31936c9e5792fc8f92e,1638204287.438207,1638211994.731065,"Running as user ""root"" and group ""root"". This could be dangerous."

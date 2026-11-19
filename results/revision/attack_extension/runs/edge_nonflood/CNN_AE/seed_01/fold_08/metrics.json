@@ -1,0 +1,18 @@
+{
+  "dataset": "edge_nonflood",
+  "model": "CNN_AE",
+  "seed": 1,
+  "fold": 8,
+  "model_seed": 1221204,
+  "epochs_used": 16,
+  "threshold": 0.06151024438440799,
+  "neutral": 0.99053955078125,
+  "train_sec": 6.059271574020386,
+  "n_train": 7200,
+  "n_val": 1800,
+  "n_test": 2000,
+  "attack_oos_frac": 0.0,
+  "attack_dist_median": 0.0,
+  "normal_oos_frac": 0.0,
+  "predictions_sha256": "4b8e417c3e8b44092cfae56dd644f06211f891ff76ab2006947facd7579cbf7e"
+}

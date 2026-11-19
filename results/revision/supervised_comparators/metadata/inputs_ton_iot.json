@@ -1,0 +1,13 @@
+{
+  "dataset": "ton_iot",
+  "sample_sha256": "1fe718e7099ab2de9d8c29c5c5265555a79dd7e74aa40573f3a375c0c644e6d4",
+  "corpus_sha256": "fb993224f1e2dfd1542cbfbcf4b6d8e1d21626f11ac95391300e5789324a2921",
+  "n_jobs": 4,
+  "validation_mode": false,
+  "models": [
+    "XGB",
+    "RF",
+    "LR",
+    "MLP"
+  ]
+}

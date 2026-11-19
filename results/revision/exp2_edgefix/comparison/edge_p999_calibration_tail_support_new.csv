@@ -1,0 +1,3 @@
+dataset,condition,calibration_n,nominal_calibration_upper_tail_count,interpretation
+edge_iiotset,A_q_t,1415,1.4149999999999197,EXTREME_TAIL_SENSITIVITY_ONLY
+edge_iiotset,B_q,1415,1.4149999999999197,EXTREME_TAIL_SENSITIVITY_ONLY

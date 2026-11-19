@@ -1,0 +1,13 @@
+{
+  "dataset": "edge_iiotset",
+  "sample_sha256": "6eaf0c3f6999b61df2a69a0eb70761a0e7c697842b6566deecdbd941a3e13f28",
+  "corpus_sha256": "1bc8160ecc4ba443f532500fb437e6d40d7ba332460f8b15d65af53f6d07f734",
+  "n_jobs": 4,
+  "validation_mode": false,
+  "models": [
+    "XGB",
+    "RF",
+    "LR",
+    "MLP"
+  ]
+}

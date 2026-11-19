@@ -37,3 +37,9 @@ src/
 manifests/
 results/
 reproducibility/
+
+## Revision analyses (2026-11)
+
+Post-review analyses are in `src/revision/` (scripts 25–35) and `results/revision/`. They include pre-specified
+out-of-support mechanism tests, an Edge-IIoTset early-stopping repair with a full Experiment II re-run, a Raspberry Pi 5
+deployment replay, and the supervised-classifier comparison. See `results/revision/README.md`.

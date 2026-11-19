@@ -1,0 +1,38 @@
+prediction,scope,met,detail
+P1,ciciot2023/CNN_AE,True,"|CLIP-L0|=0.07pp; CLIP-L1=29.34pp CI[26.16,32.53]"
+P1,ciciot2023/Dense_AE,True,"|CLIP-L0|=0.60pp; CLIP-L1=29.29pp CI[27.58,31.00]"
+P1,ciciot2023/LSTM_AE,True,"|CLIP-L0|=0.45pp; CLIP-L1=31.50pp CI[28.56,34.44]"
+P1,ciciot2023/SNN_AE,True,"|CLIP-L0|=0.86pp; CLIP-L1=30.61pp CI[28.92,32.31]"
+P1,ton_iot/CNN_AE,True,"|CLIP-L0|=0.34pp; CLIP-L1=34.58pp CI[33.22,35.94]"
+P1,ton_iot/Dense_AE,True,"|CLIP-L0|=0.24pp; CLIP-L1=34.42pp CI[33.07,35.77]"
+P1,ton_iot/LSTM_AE,True,"|CLIP-L0|=2.09pp; CLIP-L1=39.68pp CI[31.93,47.43]"
+P1,ton_iot/SNN_AE,True,"|CLIP-L0|=0.09pp; CLIP-L1=34.31pp CI[32.05,36.57]"
+P1,edge_iiotset/CNN_AE,True,|CLIP-L1|=0.00pp
+P1,edge_iiotset/Dense_AE,True,|CLIP-L1|=0.00pp
+P1,edge_iiotset/LSTM_AE,True,|CLIP-L1|=0.00pp
+P1,edge_iiotset/SNN_AE,True,|CLIP-L1|=0.00pp
+P2,edge_iiotset,True,FPR non-decreasing in d (tol 1pp) for all models=True; non-SNN with FPR>=50% at d=10: 3/3
+P2,ciciot2023,True,FPR non-decreasing in d (tol 1pp) for all models=True; non-SNN with FPR>=50% at d=10: 3/3
+P2,ton_iot,True,FPR non-decreasing in d (tol 1pp) for all models=True; non-SNN with FPR>=50% at d=10: 3/3
+P3,ciciot2023/CNN_AE,True,PERM FPR=50.36% vs L1 1.03%
+P3,ciciot2023/Dense_AE,True,PERM FPR=50.39% vs L1 1.03%
+P3,ciciot2023/LSTM_AE,True,PERM FPR=50.30% vs L1 1.03%
+P3,ton_iot/CNN_AE,True,PERM FPR=50.51% vs L1 1.00%
+P3,ton_iot/Dense_AE,True,PERM FPR=50.52% vs L1 1.00%
+P3,ton_iot/LSTM_AE,True,PERM FPR=50.54% vs L1 1.01%
+P4,12 cells,True,FUT(d=1) FPR > 2x L1 FPR in 12/12 cells
+P5,ciciot2023/CNN_AE,False,"pre-specified mean-L2 ratio=2.02 (median-L2 ratio=60.80, descriptive)"
+P5,ciciot2023/Dense_AE,False,"pre-specified mean-L2 ratio=1.05 (median-L2 ratio=36.01, descriptive)"
+P5,ciciot2023/LSTM_AE,True,"pre-specified mean-L2 ratio=4.76 (median-L2 ratio=34.57, descriptive)"
+P5,edge_iiotset/CNN_AE,True,"pre-specified mean-L2 ratio=0.97 (median-L2 ratio=0.94, descriptive)"
+P5,edge_iiotset/Dense_AE,True,"pre-specified mean-L2 ratio=1.00 (median-L2 ratio=1.00, descriptive)"
+P5,edge_iiotset/LSTM_AE,True,"pre-specified mean-L2 ratio=0.92 (median-L2 ratio=0.90, descriptive)"
+P5,ton_iot/CNN_AE,True,"pre-specified mean-L2 ratio=6.89 (median-L2 ratio=12.39, descriptive)"
+P5,ton_iot/Dense_AE,False,"pre-specified mean-L2 ratio=2.81 (median-L2 ratio=3.93, descriptive)"
+P5,ton_iot/LSTM_AE,True,"pre-specified mean-L2 ratio=12.69 (median-L2 ratio=17.01, descriptive)"
+P6,ciciot2023/CNN_AE,True,"0:0.731(n=236780); (0,0.1]:0.733(n=31713); (0.1,1]:0.758(n=107697); (1,10]:0.964(n=241810); >10:1.000(n=372000)"
+P6,ciciot2023/Dense_AE,False,"0:0.725(n=236780); (0,0.1]:0.713(n=31713); (0.1,1]:0.762(n=107697); (1,10]:0.949(n=241810); >10:1.000(n=372000)"
+P6,ciciot2023/LSTM_AE,False,"0:0.705(n=236780); (0,0.1]:0.682(n=31713); (0.1,1]:0.740(n=107697); (1,10]:0.924(n=241810); >10:1.000(n=372000)"
+P6,ton_iot/CNN_AE,True,"0:0.651(n=150000); (0.1,1]:0.735(n=60000); (1,10]:0.999(n=60000); >10:1.000(n=60000)"
+P6,ton_iot/Dense_AE,True,"0:0.654(n=150000); (0.1,1]:0.684(n=60000); (1,10]:0.984(n=60000); >10:1.000(n=60000)"
+P6,ton_iot/LSTM_AE,True,"0:0.585(n=150000); (0.1,1]:0.709(n=60000); (1,10]:1.000(n=60000); >10:1.000(n=60000)"

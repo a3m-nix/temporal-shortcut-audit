@@ -1,0 +1,13 @@
+{
+  "dataset": "ciciot2023",
+  "sample_sha256": "bc35172fddb2155b1aefcdc6559c84e778320da02d21134f533cee842b7928e7",
+  "corpus_sha256": "47657a9014f09b5ea5835b044e618fdaa57b9a433f84bdfdd3306daec66dfa87",
+  "n_jobs": 4,
+  "validation_mode": false,
+  "models": [
+    "XGB",
+    "RF",
+    "LR",
+    "MLP"
+  ]
+}

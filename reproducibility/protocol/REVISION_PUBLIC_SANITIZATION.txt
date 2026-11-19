@@ -1,0 +1,32 @@
+Revision public sanitization (2026-11)
+======================================
+
+Scope:
+src/revision/, results/revision/
+
+Scientific values changed:
+NONE.
+
+Transformations (same rules as PUBLIC_RELEASE_TRANSFORM.txt and PUBLIC_ARTIFACT_SANITIZATION.txt):
+- private absolute experiment paths replaced by TEMPORAL_AUDIT_ROOT (code) or <EXPERIMENT_ROOT> (results);
+- device paths replaced by <DEVICE_ROOT> / <DEVICE_HOME>; the device power-logger path is read from FNIRSI_LOGGER;
+- venue-specific working labels and manuscript identifiers removed;
+- script file names mapped to the public names (20-end-to-end-audit-informed-v1.2.py,
+  21-acquisition-counter-placebo-v1.py, 24-thresholdfree-multibudget-translation-posthoc-v1.py).
+
+Pre-specified prediction files:
+- mechanism_oos/metadata/PREREGISTERED_PREDICTIONS.md: verbatim, SHA-256
+  68dee8a6dbea70a17044f0c2c57b6c3f9b04768f29d008170fa4935d3d415d38 (= hash recorded before the run).
+- edge_earlystop_repair/metadata/PREREGISTERED_PREDICTIONS.md: verbatim, SHA-256
+  b5e696e6f67e0f8f57c3c774d5e5c92e44cff7d0c24b988309625e0035645a41 (= hash recorded before the run).
+- rpi5_deployment_replay/metadata/PREREGISTERED_PREDICTIONS.md: the title line had a manuscript identifier
+  removed; nothing else changed. Original SHA-256 (recorded before the run, kept in PREREGISTERED_PREDICTIONS.sha256):
+  f58fa6c80df401b69e064d3e46df8f2c8554385cc1f7eee325bbb19fc035635b. Public copy SHA-256:
+  f091f0d5b53c7446c090ec6ea5bd78258880208219fe5c83024dd2f438b45630.
+
+Protocol-hash gate in script 33:
+The public copy of script 20 differs from the private original only by path sanitization, but its file hash is part
+of the v1.2 protocol hash. Script 33 therefore reports a hash mismatch on a public checkout. Set
+TEMPORAL_ALLOW_PROTOCOL_HASH_CHANGE=1 to proceed in that case.
+
+The original artifacts remain unchanged in the private experimental archive.

@@ -1,0 +1,4 @@
+dataset,normal_start_utc,normal_end_utc,normal_span_h,attack_start_utc,attack_end_utc,attack_span_h,attack_inside_normal_calendar_range,normal_inside_attack_calendar_range,attack_before_all_normal,attack_after_all_normal,normal_captures,attack_captures,raw_capture_certified_fraction
+ciciot2023,2022-10-07 17:15,2022-10-07 21:31,4.275846935576863,2022-08-16 16:33,2023-01-19 15:59,3743.4441412208475,0.0,1.0,0.38433333333333336,0.6156666666666667,1,15,0.0
+edge_iiotset,2021-11-21 10:44,2022-01-05 10:02,1079.3038507535723,2021-11-24 18:02,2021-11-25 10:39,16.6134812382857,1.0,0.0,0.0,0.0,10,4,0.44933035714285713
+ton_iot,2019-04-02 15:52,2019-04-03 10:25,18.56094988670614,2019-04-25 14:48,2019-04-26 04:11,13.384161361720826,0.0,0.0,0.0,1.0,6,7,0.03239285714285714

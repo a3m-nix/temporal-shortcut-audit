@@ -1,0 +1,7 @@
+prediction,met,detail
+R1,True,"median epochs non-SNN={'CNN_AE': 30.0, 'Dense_AE': 30.0, 'LSTM_AE': 30.0}; B AUC={'CNN_AE': 0.995, 'Dense_AE': 0.995, 'LSTM_AE': 0.987}"
+R2,True,"B FNR={'CNN_AE': 0.31, 'Dense_AE': 0.08, 'LSTM_AE': 14.56}"
+R3,False,"B-A={'Dense_AE': -26.55, 'LSTM_AE': -23.19, 'CNN_AE': -13.06}"
+R4,True,"N-B={'Dense_AE': 0.0, 'LSTM_AE': 0.25, 'CNN_AE': 0.57}"
+R5,False,SNN |B-A|=49.23 vs 45.26
+R6,True,sign agreement FIXED30 vs FITVAL: 4/4

@@ -7,4 +7,8 @@ scalers, baselines, CIC/ToN runs) except:
   (RandomState(280000 + seed)), and the model trains on the remaining 85%. This is the FITVAL variant of script 28.
 - The train, intervene and analyze stages were then re-run with the original v1.2 code (driver: script 33).
 - The original Edge runs and stage markers are kept in `_superseded/`.
-CIC/ToN results must be bit-identical to v1.2; this is checked by script 33.
+CIC/ToN results are checked against v1.2 by script 34 (`edgefix_comparison/non_edge_identity_check.csv`).
+
+Correction (2026-11-19): the Edge-IIoTset intervention outputs copied from v1.2 were first reused by the resumable
+intervene stage. They were moved to `_superseded/stale_edge_interventions_fix_2026-11-19/` and recomputed with the
+retrained models; intervene, analyze, script 24 and script 34 were re-run (logs in `logs/edgefix/`).

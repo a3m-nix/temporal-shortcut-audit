@@ -5,7 +5,7 @@ temporal_audit_temporal_upgrade_e2e_v1_2/analysis_unit_contrast_statistics.csv,D
 temporal_audit_temporal_upgrade_e2e_v1_2/baseline_metrics.csv,IDENTICAL,0.0,16.0
 temporal_audit_temporal_upgrade_e2e_v1_2/candidate_research_question_evidence.csv,no dataset column,,
 temporal_audit_temporal_upgrade_e2e_v1_2/intervention_analysis_unit_per_unit.csv,IDENTICAL,0.0,23328.0
-temporal_audit_temporal_upgrade_e2e_v1_2/intervention_analysis_unit_statistics.csv,DIFF,0.1650141749291254,144.0
+temporal_audit_temporal_upgrade_e2e_v1_2/intervention_analysis_unit_statistics.csv,DIFF,0.0550047249763751,144.0
 temporal_audit_temporal_upgrade_e2e_v1_2/intervention_run_metrics.csv,IDENTICAL,0.0,216.0
 temporal_audit_temporal_upgrade_e2e_v1_2/neural_metrics_summary.csv,IDENTICAL,0.0,56.0
 temporal_audit_temporal_upgrade_e2e_v1_2/neural_run_metrics.csv,IDENTICAL,0.0,168.0

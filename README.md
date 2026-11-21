@@ -2,13 +2,13 @@
 
 Reproducibility package for the study:
 
-**When Absolute Capture Time Behaves Like a Label: Temporal Shortcuts in Reconstruction-Based IoT Intrusion Detection**
+**When Absolute Capture Time Acts as Novelty: Out-of-Support Timestamp Shortcuts in Reconstruction-Based IoT Intrusion Detection**
 
 This repository contains source code, protocol metadata, manifests, and analysis outputs used to audit whether absolute packet capture time acts as an acquisition-derived shortcut in reconstruction-based IoT/IIoT intrusion detection.
 
 ## Evidence Structure
 
-The repository preserves three evidence layers:
+This repository provides the reproducibility materials for the primary temporal-shortcut audit, the audit-informed validation, and four additional evidence blocks introduced during peer-review revision. These blocks include out-of-support mechanism tests, early-stopping repair, evaluation of additional attack families, and chronological deployment replay on a Raspberry Pi 5:
 
 1. **Experiment I — Frozen primary evidence**  
    Controlled temporal intervention using frozen repeated-cross-validation models.  
